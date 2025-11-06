@@ -5,13 +5,13 @@
     "expp": "REV",
     "ptyp": "IHO",
     "esid": "0",
-    "edtn": "04.0",
-    "codt": "20140201",
+    "edtn": "04.0.3",
+    "codt": "20141001",
     "coti": "140000",
     "vrdt": "20000330",
     "prof": "PR",
     "ocdt": "20070131",
-    "comt": "Official IHO Presentation Library for ECDIS Ed 4 revision 0"
+    "comt": "Official IHO Presentation Library for ECDIS Ed 4 revision 4.0.4"
   },
   "colours": [
     {
@@ -1580,7 +1580,7 @@
       "rpri": "O",
       "tnam": "PLAIN_BOUNDARIES",
       "attc": [],
-      "inst": "TX(OBJNAM,3,1,2,'15110',1,0,CHBLK,21);TE('clr %4.1lf','VERCLR',3,1,2,'15110',1,1,CHBLK,11);LS(SOLD,4,CHGRD)",
+      "inst": "TX(OBJNAM,3,1,2,'15110',1,0,CHBLK,26);TE('clr %4.1lf','VERCLR',3,1,2,'15110',1,1,CHBLK,11);LS(SOLD,4,CHGRD)",
       "disc": "DISPLAYBASE",
       "lucm": ""
     },
@@ -2409,7 +2409,7 @@
       "stat": "NIL",
       "obcl": "FLODOC",
       "ftyp": "A",
-      "dpri": 1,
+      "dpri": 2,
       "rpri": "S",
       "tnam": "PLAIN_BOUNDARIES",
       "attc": [],
@@ -2683,7 +2683,7 @@
       "stat": "NIL",
       "obcl": "HULKES",
       "ftyp": "A",
-      "dpri": 1,
+      "dpri": 2,
       "rpri": "S",
       "tnam": "PLAIN_BOUNDARIES",
       "attc": [],
@@ -3542,7 +3542,7 @@
       "stat": "NIL",
       "obcl": "PONTON",
       "ftyp": "A",
-      "dpri": 1,
+      "dpri": 2,
       "rpri": "S",
       "tnam": "PLAIN_BOUNDARIES",
       "attc": [],
@@ -5182,7 +5182,7 @@
       "stat": "NIL",
       "obcl": "indhlt",
       "ftyp": "A",
-      "dpri": 8,
+      "dpri": 9,
       "rpri": "O",
       "tnam": "PLAIN_BOUNDARIES",
       "attc": [],
@@ -5256,7 +5256,7 @@
           "attv": "8"
         }
       ],
-      "inst": "SY(ACHARE02);TX(OBJNAM,2,1,2,'15110',-1,2,CHBLK,26);LC(ACHARE51);CS(RESTRN01)",
+      "inst": "SY(ACHARE02);TX(OBJNAM,2,1,2,'15110',-1,2,CHBLK,26);LS(DASH,2,CHMGF);CS(RESTRN01)",
       "disc": "STANDARD",
       "lucm": ""
     },
@@ -5352,7 +5352,7 @@
       "rpri": "O",
       "tnam": "SYMBOLIZED_BOUNDARIES",
       "attc": [],
-      "inst": "TX(OBJNAM,3,1,2,'15110',1,0,CHBLK,21);TE('clr %4.1lf','VERCLR',3,1,2,'15110',1,1,CHBLK,11);LS(SOLD,4,CHGRD)",
+      "inst": "TX(OBJNAM,3,1,2,'15110',1,0,CHBLK,26);TE('clr %4.1lf','VERCLR',3,1,2,'15110',1,1,CHBLK,11);LS(SOLD,4,CHGRD)",
       "disc": "DISPLAYBASE",
       "lucm": ""
     },
@@ -6181,7 +6181,7 @@
       "stat": "NIL",
       "obcl": "FLODOC",
       "ftyp": "A",
-      "dpri": 1,
+      "dpri": 2,
       "rpri": "S",
       "tnam": "SYMBOLIZED_BOUNDARIES",
       "attc": [],
@@ -6455,7 +6455,7 @@
       "stat": "NIL",
       "obcl": "HULKES",
       "ftyp": "A",
-      "dpri": 1,
+      "dpri": 2,
       "rpri": "S",
       "tnam": "SYMBOLIZED_BOUNDARIES",
       "attc": [],
@@ -7314,7 +7314,7 @@
       "stat": "NIL",
       "obcl": "PONTON",
       "ftyp": "A",
-      "dpri": 1,
+      "dpri": 2,
       "rpri": "S",
       "tnam": "SYMBOLIZED_BOUNDARIES",
       "attc": [],
@@ -8954,7 +8954,7 @@
       "stat": "NIL",
       "obcl": "indhlt",
       "ftyp": "A",
-      "dpri": 8,
+      "dpri": 9,
       "rpri": "O",
       "tnam": "SYMBOLIZED_BOUNDARIES",
       "attc": [],
@@ -9023,7 +9023,7 @@
       "rpri": "O",
       "tnam": "LINES",
       "attc": [],
-      "inst": "LS(SOLD,5,CHGRD);TX(OBJNAM,3,1,2,'15110',1,0,CHBLK,21);TE('clr %4.1lf','VERCLR',3,1,2,'15110',1,1,CHBLK,11)",
+      "inst": "LS(SOLD,5,CHGRD);TX(OBJNAM,3,1,2,'15110',1,0,CHBLK,26);TE('clr %4.1lf','VERCLR',3,1,2,'15110',1,1,CHBLK,11)",
       "disc": "DISPLAYBASE",
       "lucm": ""
     },
@@ -11739,7 +11739,7 @@
       "stat": "NIL",
       "obcl": "indhlt",
       "ftyp": "L",
-      "dpri": 8,
+      "dpri": 9,
       "rpri": "O",
       "tnam": "LINES",
       "attc": [],
@@ -14885,43 +14885,7 @@
       "lucm": ""
     },
     {
-      "rcid": 856,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(POSGEN03)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 850,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(CAIRNS01)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 830,
+      "rcid": 820,
       "stat": "NIL",
       "obcl": "LNDMRK",
       "ftyp": "P",
@@ -14931,477 +14895,19 @@
       "attc": [
         {
           "attl": "CATLMK",
-          "attv": "1"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(CAIRNS11)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 850,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "3"
-        }
-      ],
-      "inst": "SY(CHIMNY01)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 831,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "3"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(CHIMNY11)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 850,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "4"
-        }
-      ],
-      "inst": "SY(DSHAER01)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 832,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "4"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(DSHAER11)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 850,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "5"
-        }
-      ],
-      "inst": "SY(FLGSTF01)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 833,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "5"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(FLGSTF01)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 851,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "6"
-        }
-      ],
-      "inst": "SY(FLASTK01)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 834,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "6"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(FLASTK11)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 852,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "7"
-        }
-      ],
-      "inst": "SY(MSTCON04)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 835,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "7"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(MSTCON14)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 850,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "8"
-        }
-      ],
-      "inst": "SY(POSGEN03)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 836,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "8"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(POSGEN03)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 850,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "9"
-        }
-      ],
-      "inst": "SY(MONUMT02)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 837,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "9"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(MONUMT12)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 850,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "10"
-        }
-      ],
-      "inst": "SY(MONUMT02)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 838,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "10"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(MONUMT12)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 850,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "12"
-        }
-      ],
-      "inst": "SY(MONUMT02)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 839,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "12"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(MONUMT12)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 850,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "13"
-        }
-      ],
-      "inst": "SY(MONUMT02)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 840,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "13"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(MONUMT12)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 853,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "15"
-        }
-      ],
-      "inst": "SY(DOMES001)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 841,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "15"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(DOMES011)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 847,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "15"
+          "attv": "17"
         },
         {
           "attl": "FUNCTN",
-          "attv": "20"
+          "attv": "33"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
         }
       ],
-      "inst": "SY(BUIREL01)",
-      "disc": "OTHER",
+      "inst": "SY(TOWERS03);TX(OBJNAM,3,2,2,'15110',1,-1,CHBLK,26)",
+      "disc": "STANDARD",
       "lucm": ""
     },
     {
@@ -15454,108 +14960,6 @@
       ],
       "inst": "SY(BUIREL13)",
       "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 854,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "16"
-        }
-      ],
-      "inst": "SY(RASCAN01)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 842,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "16"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(RASCAN11)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 855,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "17"
-        }
-      ],
-      "inst": "SY(TOWERS01)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 843,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "17"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(TOWERS03)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 848,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "17"
-        },
-        {
-          "attl": "FUNCTN",
-          "attv": "20"
-        }
-      ],
-      "inst": "SY(BUIREL01)",
-      "disc": "OTHER",
       "lucm": ""
     },
     {
@@ -15615,28 +15019,6 @@
       "stat": "NIL",
       "obcl": "LNDMRK",
       "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "17"
-        },
-        {
-          "attl": "FUNCTN",
-          "attv": "31"
-        }
-      ],
-      "inst": "SY(TOWERS05);TX(OBJNAM,3,2,2,'15110',1,-1,CHBLK,26)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 1165,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
       "dpri": 6,
       "rpri": "O",
       "tnam": "SIMPLIFIED",
@@ -15656,196 +15038,6 @@
       ],
       "inst": "SY(TOWERS15);TX(OBJNAM,3,2,2,'15110',1,-1,CHBLK,26)",
       "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 829,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "17"
-        },
-        {
-          "attl": "FUNCTN",
-          "attv": "33"
-        }
-      ],
-      "inst": "SY(TOWERS01);TX(OBJNAM,3,2,2,'15110',1,-1,CHBLK,26)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 820,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "17"
-        },
-        {
-          "attl": "FUNCTN",
-          "attv": "33"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(TOWERS03);TX(OBJNAM,3,2,2,'15110',1,-1,CHBLK,26)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 850,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "18"
-        }
-      ],
-      "inst": "SY(WNDMIL02)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 844,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "18"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(WNDMIL12)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 850,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "19"
-        }
-      ],
-      "inst": "SY(WIMCOM01)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 845,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "19"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(WIMCON11)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 850,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "20"
-        }
-      ],
-      "inst": "SY(POSGEN01)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 846,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "20"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(POSGEN03)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 849,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "SIMPLIFIED",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "20"
-        },
-        {
-          "attl": "FUNCTN",
-          "attv": "20"
-        }
-      ],
-      "inst": "SY(BUIREL01)",
-      "disc": "OTHER",
       "lucm": ""
     },
     {
@@ -15949,6 +15141,814 @@
         }
       ],
       "inst": "SY(BUIREL15)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 829,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "17"
+        },
+        {
+          "attl": "FUNCTN",
+          "attv": "33"
+        }
+      ],
+      "inst": "SY(TOWERS01);TX(OBJNAM,3,2,2,'15110',1,-1,CHBLK,26)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 830,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "1"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(CAIRNS11)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 831,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "3"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(CHIMNY11)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 832,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "4"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(DSHAER11)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 833,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "5"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(FLGSTF01)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 834,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "6"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(FLASTK11)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 835,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "7"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(MSTCON14)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 836,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "8"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(POSGEN03)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 837,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "9"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(MONUMT12)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 838,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "10"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(MONUMT12)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 839,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "12"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(MONUMT12)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 840,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "13"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(MONUMT12)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 841,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "15"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(DOMES011)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 842,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "16"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(RASCAN11)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 843,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "17"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(TOWERS03)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 844,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "18"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(WNDMIL12)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 845,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "19"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(WIMCON11)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 846,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "20"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(POSGEN03)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 847,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "15"
+        },
+        {
+          "attl": "FUNCTN",
+          "attv": "20"
+        }
+      ],
+      "inst": "SY(BUIREL01)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 848,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "17"
+        },
+        {
+          "attl": "FUNCTN",
+          "attv": "20"
+        }
+      ],
+      "inst": "SY(BUIREL01)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 1165,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "17"
+        },
+        {
+          "attl": "FUNCTN",
+          "attv": "31"
+        }
+      ],
+      "inst": "SY(TOWERS05);TX(OBJNAM,3,2,2,'15110',1,-1,CHBLK,26)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 849,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "20"
+        },
+        {
+          "attl": "FUNCTN",
+          "attv": "20"
+        }
+      ],
+      "inst": "SY(BUIREL01)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 850,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(CAIRNS01)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 850,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "3"
+        }
+      ],
+      "inst": "SY(CHIMNY01)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 850,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "4"
+        }
+      ],
+      "inst": "SY(DSHAER01)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 850,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "5"
+        }
+      ],
+      "inst": "SY(FLGSTF01)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 851,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "6"
+        }
+      ],
+      "inst": "SY(FLASTK01)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 852,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "7"
+        }
+      ],
+      "inst": "SY(MSTCON04)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 850,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "8"
+        }
+      ],
+      "inst": "SY(POSGEN03)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 850,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "9"
+        }
+      ],
+      "inst": "SY(MONUMT02)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 850,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "10"
+        }
+      ],
+      "inst": "SY(MONUMT02)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 850,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "12"
+        }
+      ],
+      "inst": "SY(MONUMT02)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 850,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "13"
+        }
+      ],
+      "inst": "SY(MONUMT02)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 853,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "15"
+        }
+      ],
+      "inst": "SY(DOMES001)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 854,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "16"
+        }
+      ],
+      "inst": "SY(RASCAN01)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 855,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "17"
+        }
+      ],
+      "inst": "SY(TOWERS01)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 850,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "18"
+        }
+      ],
+      "inst": "SY(WNDMIL02)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 850,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "19"
+        }
+      ],
+      "inst": "SY(WIMCON01)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 850,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "20"
+        }
+      ],
+      "inst": "SY(POSGEN01)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 856,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "SIMPLIFIED",
+      "attc": [
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(POSGEN03)",
       "disc": "STANDARD",
       "lucm": ""
     },
@@ -17628,7 +17628,7 @@
       "stat": "NIL",
       "obcl": "indhlt",
       "ftyp": "P",
-      "dpri": 8,
+      "dpri": 9,
       "rpri": "O",
       "tnam": "SIMPLIFIED",
       "attc": [],
@@ -20431,43 +20431,7 @@
       "lucm": ""
     },
     {
-      "rcid": 1202,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(POSGEN03)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 1185,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(CAIRNS01)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 1167,
+      "rcid": 1157,
       "stat": "NIL",
       "obcl": "LNDMRK",
       "ftyp": "P",
@@ -20477,477 +20441,19 @@
       "attc": [
         {
           "attl": "CATLMK",
-          "attv": "1"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(CAIRNS11)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 1186,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "3"
-        }
-      ],
-      "inst": "SY(CHIMNY01)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 1168,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "3"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(CHIMNY11)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 1187,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "4"
-        }
-      ],
-      "inst": "SY(DSHAER01)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 1169,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "4"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(DSHAER11)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 1188,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "5"
-        }
-      ],
-      "inst": "SY(FLGSTF01)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 1170,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "5"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(FLGSTF01)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 1189,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "6"
-        }
-      ],
-      "inst": "SY(FLASTK01)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 1171,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "6"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(FLASTK11)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 1190,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "7"
-        }
-      ],
-      "inst": "SY(MSTCON04)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 1172,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "7"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(MSTCON14)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 1191,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "8"
-        }
-      ],
-      "inst": "SY(POSGEN03)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 1173,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "8"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(POSGEN03)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 1192,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "9"
-        }
-      ],
-      "inst": "SY(MONUMT02)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 1174,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "9"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(MONUMT12)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 1193,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "10"
-        }
-      ],
-      "inst": "SY(MONUMT02)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 1175,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "10"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(MONUMT12)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 1194,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "12"
-        }
-      ],
-      "inst": "SY(MONUMT02)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 1176,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "12"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(MONUMT12)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 1195,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "13"
-        }
-      ],
-      "inst": "SY(MONUMT02)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 1177,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "13"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(MONUMT12)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 1196,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "15"
-        }
-      ],
-      "inst": "SY(DOMES001)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 1178,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "15"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(DOMES011)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 1178,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "15"
+          "attv": "17"
         },
         {
           "attl": "FUNCTN",
-          "attv": "20"
+          "attv": "33"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
         }
       ],
-      "inst": "SY(BUIREL01)",
-      "disc": "OTHER",
+      "inst": "SY(TOWERS03);TX(OBJNAM,3,2,2,'15110',1,-1,CHBLK,26)",
+      "disc": "STANDARD",
       "lucm": ""
     },
     {
@@ -21003,108 +20509,6 @@
       "lucm": ""
     },
     {
-      "rcid": 1197,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "16"
-        }
-      ],
-      "inst": "SY(RASCAN01)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 1179,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "16"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(RASCAN11)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 1198,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "17"
-        }
-      ],
-      "inst": "SY(TOWERS01)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 1180,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "17"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(TOWERS03)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 1178,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "17"
-        },
-        {
-          "attl": "FUNCTN",
-          "attv": "20"
-        }
-      ],
-      "inst": "SY(BUIREL01)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
       "rcid": 1160,
       "stat": "NIL",
       "obcl": "LNDMRK",
@@ -21154,244 +20558,6 @@
       ],
       "inst": "SY(BUIREL13)",
       "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 1165,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "17"
-        },
-        {
-          "attl": "FUNCTN",
-          "attv": "31"
-        }
-      ],
-      "inst": "SY(TOWERS05);TX(OBJNAM,3,2,2,'15110',1,1,CHBLK,26)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 1165,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "17"
-        },
-        {
-          "attl": "FUNCTN",
-          "attv": "31"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(TOWERS15);TX(OBJNAM,3,2,2,'15110',1,1,CHBLK,26)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 1166,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "17"
-        },
-        {
-          "attl": "FUNCTN",
-          "attv": "33"
-        }
-      ],
-      "inst": "SY(TOWERS01);TX(OBJNAM,3,2,2,'15110',1,-1,CHBLK,26)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 1157,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "17"
-        },
-        {
-          "attl": "FUNCTN",
-          "attv": "33"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(TOWERS03);TX(OBJNAM,3,2,2,'15110',1,-1,CHBLK,26)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 1199,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "18"
-        }
-      ],
-      "inst": "SY(WNDMIL02)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 1181,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "18"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(WNDMIL12)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 1200,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "19"
-        }
-      ],
-      "inst": "SY(WIMCON01)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 1182,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "19"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(WIMCON11)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 1201,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "20"
-        }
-      ],
-      "inst": "SY(POSGEN01)",
-      "disc": "OTHER",
-      "lucm": ""
-    },
-    {
-      "rcid": 1183,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 6,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "20"
-        },
-        {
-          "attl": "CONVIS",
-          "attv": "1"
-        }
-      ],
-      "inst": "SY(POSGEN03)",
-      "disc": "STANDARD",
-      "lucm": ""
-    },
-    {
-      "rcid": 1184,
-      "stat": "NIL",
-      "obcl": "LNDMRK",
-      "ftyp": "P",
-      "dpri": 4,
-      "rpri": "O",
-      "tnam": "PAPER_CHART",
-      "attc": [
-        {
-          "attl": "CATLMK",
-          "attv": "20"
-        },
-        {
-          "attl": "FUNCTN",
-          "attv": "20"
-        }
-      ],
-      "inst": "SY(BUIREL01)",
-      "disc": "OTHER",
       "lucm": ""
     },
     {
@@ -21495,6 +20661,840 @@
         }
       ],
       "inst": "SY(BUIREL15)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 1165,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "17"
+        },
+        {
+          "attl": "FUNCTN",
+          "attv": "31"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(TOWERS15);TX(OBJNAM,3,2,2,'15110',1,1,CHBLK,26)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 1166,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "17"
+        },
+        {
+          "attl": "FUNCTN",
+          "attv": "33"
+        }
+      ],
+      "inst": "SY(TOWERS01);TX(OBJNAM,3,2,2,'15110',1,-1,CHBLK,26)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 1167,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "1"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(CAIRNS11)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 1168,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "3"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(CHIMNY11)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 1169,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "4"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(DSHAER11)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 1170,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "5"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(FLGSTF01)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 1171,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "6"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(FLASTK11)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 1172,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "7"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(MSTCON14)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 1173,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "8"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(POSGEN03)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 1174,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "9"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(MONUMT12)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 1175,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "10"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(MONUMT12)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 1176,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "12"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(MONUMT12)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 1177,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "13"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(MONUMT12)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 1178,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "15"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(DOMES011)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 1179,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "16"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(RASCAN11)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 1180,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "17"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(TOWERS03)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 1181,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "18"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(WNDMIL12)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 1182,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "19"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(WIMCON11)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 1183,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "20"
+        },
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(POSGEN03)",
+      "disc": "STANDARD",
+      "lucm": ""
+    },
+    {
+      "rcid": 1178,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "15"
+        },
+        {
+          "attl": "FUNCTN",
+          "attv": "20"
+        }
+      ],
+      "inst": "SY(BUIREL01)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 1178,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "17"
+        },
+        {
+          "attl": "FUNCTN",
+          "attv": "20"
+        }
+      ],
+      "inst": "SY(BUIREL01)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 1165,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "17"
+        },
+        {
+          "attl": "FUNCTN",
+          "attv": "31"
+        }
+      ],
+      "inst": "SY(TOWERS05);TX(OBJNAM,3,2,2,'15110',1,1,CHBLK,26)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 1184,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "20"
+        },
+        {
+          "attl": "FUNCTN",
+          "attv": "20"
+        }
+      ],
+      "inst": "SY(BUIREL01)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 1185,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(CAIRNS01)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 1186,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "3"
+        }
+      ],
+      "inst": "SY(CHIMNY01)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 1187,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "4"
+        }
+      ],
+      "inst": "SY(DSHAER01)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 1188,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "5"
+        }
+      ],
+      "inst": "SY(FLGSTF01)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 1189,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "6"
+        }
+      ],
+      "inst": "SY(FLASTK01)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 1190,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "7"
+        }
+      ],
+      "inst": "SY(MSTCON04)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 1191,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "8"
+        }
+      ],
+      "inst": "SY(POSGEN03)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 1192,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "9"
+        }
+      ],
+      "inst": "SY(MONUMT02)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 1193,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "10"
+        }
+      ],
+      "inst": "SY(MONUMT02)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 1194,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "12"
+        }
+      ],
+      "inst": "SY(MONUMT02)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 1195,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "13"
+        }
+      ],
+      "inst": "SY(MONUMT02)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 1196,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "15"
+        }
+      ],
+      "inst": "SY(DOMES001)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 1197,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "16"
+        }
+      ],
+      "inst": "SY(RASCAN01)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 1198,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "17"
+        }
+      ],
+      "inst": "SY(TOWERS01)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 1199,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "18"
+        }
+      ],
+      "inst": "SY(WNDMIL02)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 1200,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "19"
+        }
+      ],
+      "inst": "SY(WIMCON01)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 1201,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 4,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CATLMK",
+          "attv": "20"
+        }
+      ],
+      "inst": "SY(POSGEN01)",
+      "disc": "OTHER",
+      "lucm": ""
+    },
+    {
+      "rcid": 1202,
+      "stat": "NIL",
+      "obcl": "LNDMRK",
+      "ftyp": "P",
+      "dpri": 6,
+      "rpri": "O",
+      "tnam": "PAPER_CHART",
+      "attc": [
+        {
+          "attl": "CONVIS",
+          "attv": "1"
+        }
+      ],
+      "inst": "SY(POSGEN03)",
       "disc": "STANDARD",
       "lucm": ""
     },
@@ -23218,7 +23218,7 @@
       "stat": "NIL",
       "obcl": "indhlt",
       "ftyp": "P",
-      "dpri": 8,
+      "dpri": 9,
       "rpri": "O",
       "tnam": "PAPER_CHART",
       "attc": [],
