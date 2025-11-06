@@ -2,7 +2,10 @@ import { test, expect } from "vitest";
 import { readFileSync } from "fs";
 import { parse } from "../src/index.js";
 
-const daiPath = new URL("../../s52/data/PresLib_e4.0.0.dai", import.meta.url);
+const daiPath = new URL(
+  "../../s52/data/S-52 PresLib Ed 4.0.4.dai",
+  import.meta.url,
+);
 const text = readFileSync(daiPath, "utf8");
 
 test("parse S52 DAI file", async () => {

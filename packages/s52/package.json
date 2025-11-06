@@ -1,6 +1,6 @@
 {
   "name": "@enc-tiles/s52",
-  "version": "4.0.0",
+  "version": "4.0.4",
   "description": "The S-52 Presentation Library in JSON format",
   "keywords": [
     "s52",
