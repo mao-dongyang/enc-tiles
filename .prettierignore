@@ -3,4 +3,6 @@ dist
 packages/s52/data
 packages/s52/symbols
 packages/s52/sprites
-packages/s52/{data,colours,symbols}.json
+packages/s52/data.json
+packages/s52/colours.json
+packages/s52/symbols.json
