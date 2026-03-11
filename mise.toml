@@ -1,0 +1,107 @@
+# ============================================================
+# enc-tiles — S-57 Electronic Navigational Chart Web Viewer
+# mise configuration for environment & task management
+# ============================================================
+
+[tools]
+node = "20"
+
+# ── Environment variables ────────────────────────────────────
+# Vite requires VITE_ prefix to expose env vars to client code
+[env]
+VITE_TILES_URL = "https://pub-0b8220da652f4a95a2293d0f61351a33.r2.dev"
+VITE_TILESET = "noaa.pmtiles"
+NODE_ENV = "development"
+# Ensure cargo-installed tools (spreet etc.) are on PATH
+_.path = ["~/.cargo/bin"]
+
+# ── Tasks ────────────────────────────────────────────────────
+
+[tasks.setup]
+description = "Initialize project: submodules + install + build"
+run = """
+git submodule update --init
+npm install
+npm run build
+"""
+
+[tasks.dev]
+description = "Start Vite dev server (http://localhost:5173)"
+run = "npm run start"
+
+[tasks.build]
+description = "Build all workspace packages"
+run = "npm run build"
+
+[tasks.test]
+description = "Run all workspace tests"
+run = "npm run test"
+
+[tasks.lint]
+description = "Check code formatting with Prettier"
+run = "npm run lint"
+
+[tasks.format]
+description = "Auto-fix code formatting with Prettier"
+run = "npm run format"
+
+[tasks."test:styles"]
+description = "Run styles package tests in watch mode"
+run = "npx vitest"
+dir = "packages/styles"
+
+[tasks."test:s52"]
+description = "Run s52 package tests in watch mode"
+run = "npx vitest"
+dir = "packages/s52"
+
+[tasks."test:dai"]
+description = "Run dai package tests in watch mode"
+run = "npx vitest"
+dir = "packages/dai"
+
+[tasks."build:styles"]
+description = "Build styles package only"
+run = "npm run build"
+dir = "packages/styles"
+
+[tasks."build:s52"]
+description = "Build s52 package only"
+run = "npm run build"
+dir = "packages/s52"
+
+[tasks."build:dai"]
+description = "Build dai package only"
+run = "npm run build"
+dir = "packages/dai"
+
+[tasks.clean]
+description = "Remove generated tiles"
+run = "rm -rf tiles"
+
+[tasks.inspect]
+description = "Open pmtiles.io to inspect the NOAA tileset"
+run = """
+echo "Opening https://pmtiles.io/#url=https%3A%2F%2Fpub-0b8220da652f4a95a2293d0f61351a33.r2.dev%2Fnoaa.pmtiles&map=3.05/39.23/-73.65&inspectFeatures=true"
+start "" "https://pmtiles.io/#url=https%3A%2F%2Fpub-0b8220da652f4a95a2293d0f61351a33.r2.dev%2Fnoaa.pmtiles&map=3.05/39.23/-73.65&inspectFeatures=true" 2>/dev/null || open "https://pmtiles.io/#url=https%3A%2F%2Fpub-0b8220da652f4a95a2293d0f61351a33.r2.dev%2Fnoaa.pmtiles&map=3.05/39.23/-73.65&inspectFeatures=true" 2>/dev/null || xdg-open "https://pmtiles.io/#url=https%3A%2F%2Fpub-0b8220da652f4a95a2293d0f61351a33.r2.dev%2Fnoaa.pmtiles&map=3.05/39.23/-73.65&inspectFeatures=true" 2>/dev/null || echo "Please open the URL above in your browser"
+"""
+
+[tasks.info]
+description = "Show project info and available tasks"
+run = """
+echo "================================================"
+echo "  enc-tiles — S-57 ENC Web Viewer"
+echo "================================================"
+echo ""
+echo "  Tiles URL:  $VITE_TILES_URL"
+echo "  Tileset:    $VITE_TILESET"
+echo "  Node:       $(node --version)"
+echo "  npm:        $(npm --version)"
+echo ""
+echo "  Quick start:"
+echo "    mise run setup   # first time only"
+echo "    mise run dev     # start dev server"
+echo ""
+echo "  Run 'mise tasks' to see all available tasks"
+echo "================================================"
+"""
